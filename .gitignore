@@ -78,6 +78,21 @@ web_modules/
 .next
 out
 
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# Project specific
+PAT Token Github.txt
+*.zip
+*.mov
+*.mp4
+
 # Nuxt.js build / generate output
 .nuxt
 dist

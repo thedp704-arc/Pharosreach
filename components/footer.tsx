@@ -195,14 +195,11 @@ export function Footer({ showContactForm = true }: { showContactForm?: boolean }
             © {currentYear} Pharos Reach. All rights reserved.
           </p>
           <div className="flex gap-8">
-            <a href="#" className="text-[#8FA39B] hover:text-accent text-xs font-light transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="text-[#8FA39B] hover:text-accent text-xs font-light transition-colors">
-              Terms
-            </a>
-            <a href="#" className="text-[#8FA39B] hover:text-accent text-xs font-light transition-colors">
-              LinkedIn
+            <a
+              href="mailto:dev@pharosreach.com"
+              className="text-[#8FA39B] hover:text-accent text-xs font-light transition-colors"
+            >
+              Email
             </a>
             <a
               href="https://instagram.com/pharosreach"

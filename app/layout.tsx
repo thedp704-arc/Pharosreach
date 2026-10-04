@@ -5,20 +5,45 @@ import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
 import { Grain } from '@/components/grain'
 
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"], variable: '--font-serif' });
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: '--font-sans' });
+const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-serif' })
+const lato = Lato({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: 'Pharos Reach - Strategic Consultancy for Fashion & E-commerce',
-  description: 'A strategic partner for global fashion and e-commerce transformation, driving excellence through innovation.',
-  generator: 'v0.app',
+  metadataBase: new URL('https://www.pharosreach.com'),
+  title: {
+    default: 'Pharos Reach | Websites & Business Systems',
+    template: '%s | Pharos Reach',
+  },
+  description:
+    'Pharos Reach builds high-trust websites, CRM infrastructure, automation, and digital systems for ambitious businesses.',
+  keywords: [
+    'web design',
+    'web development',
+    'CRM setup',
+    'business automation',
+    'e-commerce development',
+    'digital systems',
+    'Pharos Reach',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Pharos Reach | Websites & Business Systems',
+    description:
+      'High-trust websites and practical digital systems that help businesses turn attention into enquiries and growth.',
+    url: 'https://www.pharosreach.com',
+    siteName: 'Pharos Reach',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pharos Reach | Websites & Business Systems',
+    description:
+      'High-trust websites and practical digital systems for ambitious businesses.',
+  },
   icons: {
-    icon: [
-      {
-        url: '/pharos-logo.png',
-        type: 'image/png',
-      },
-    ],
+    icon: '/pharos-logo.png',
     apple: '/pharos-logo.png',
   },
 }

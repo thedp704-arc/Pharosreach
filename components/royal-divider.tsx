@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function RoyalDivider({ direction }: { direction?: 'left' | 'right' } = {}) {
+export function RoyalDivider() {
   return (
     <section aria-hidden className="relative -mt-10 mb-2">
       <div className="max-w-7xl mx-auto px-4">

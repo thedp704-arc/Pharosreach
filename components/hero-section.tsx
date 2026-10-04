@@ -21,7 +21,7 @@ export function HeroSection() {
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
-            <a href="/contact" className="bg-button-cta text-[#EDE8D0] px-10 py-4 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#E0C878] transition-colors duration-500 w-full sm:w-auto text-center shadow-[0_0_25px_rgba(198,168,90,0.25)] hover:shadow-[0_0_40px_rgba(198,168,90,0.4)] relative group overflow-hidden">
+            <a href="/contact" className="bg-button-cta text-[#0F1A17] px-10 py-4 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#E0C878] transition-colors duration-500 w-full sm:w-auto text-center shadow-[0_0_25px_rgba(198,168,90,0.25)] hover:shadow-[0_0_40px_rgba(198,168,90,0.4)] relative group overflow-hidden">
               <span className="relative z-10">Get Your Website</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </a>

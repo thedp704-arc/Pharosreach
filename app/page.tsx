@@ -20,7 +20,7 @@ export default function Home() {
         <HowItWorksSection />
         <TestimonialsSection />
         <PhilosophySection />
-        <RoyalDivider direction="right" />
+        <RoyalDivider />
       </div>
       <Footer showContactForm={true} />
     </main>

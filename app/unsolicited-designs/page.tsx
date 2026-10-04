@@ -43,7 +43,7 @@ export default function UnsolicitedDesignsPage() {
             </div>
           </section>
           
-          <RoyalDivider direction="right" />
+          <RoyalDivider />
         </div>
         
         <Footer showContactForm={true} />

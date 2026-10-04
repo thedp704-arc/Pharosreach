@@ -4,32 +4,32 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #0F1A17;
-  --foreground: #EDEDED;
-  --card: #1F3A34;
-  --card-foreground: #EDEDED;
-  --popover: #1F3A34;
-  --popover-foreground: #EDEDED;
-  --primary: #EDEDED;
-  --primary-foreground: #EDE8D0;
-  --secondary: #1F3A34;
-  --secondary-foreground: #EDEDED;
-  --muted: #8FA39B;
-  --muted-foreground: #8FA39B;
+  --background: #091512;
+  --foreground: #F3EFE3;
+  --card: #142A25;
+  --card-foreground: #F3EFE3;
+  --popover: #142A25;
+  --popover-foreground: #F3EFE3;
+  --primary: #F3EFE3;
+  --primary-foreground: #091512;
+  --secondary: #17332C;
+  --secondary-foreground: #F3EFE3;
+  --muted: #91A39B;
+  --muted-foreground: #91A39B;
   --accent: #C6A85A;
-  --accent-foreground: #0F1A17;
+  --accent-foreground: #091512;
   --destructive: #C6A85A;
-  --destructive-foreground: #0F1A17;
-  --border: rgba(198, 168, 90, 0.2);
-  --input: #1F3A34;
+  --destructive-foreground: #091512;
+  --border: rgba(198, 168, 90, 0.22);
+  --input: #142A25;
   --ring: #C6A85A;
   --chart-1: #C6A85A;
-  --chart-2: #8FA39B;
-  --chart-3: #1F3A34;
-  --chart-4: #EDEDED;
-  --chart-5: #FFE08A;
-  --radius: 0.625rem;
-  --button-cta: #FFE08A;
+  --chart-2: #91A39B;
+  --chart-3: #17332C;
+  --chart-4: #F3EFE3;
+  --chart-5: #E0C878;
+  --radius: 0.2rem;
+  --button-cta: #E0C878;
 }
 
 @theme inline {
@@ -62,29 +62,23 @@
 }
 
 @layer base {
-  * {
-    @apply outline-ring/50;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+  * { @apply outline-ring/50; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 50% -10%, rgba(198,168,90,0.055), transparent 34rem),
+      linear-gradient(rgba(255,255,255,0.008) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.008) 1px, transparent 1px);
+    background-size: auto, 72px 72px, 72px 72px;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-foreground;
-  }
+  h1, h2, h3, h4, h5, h6 { @apply text-foreground; }
+  ::selection { background: rgba(198,168,90,0.28); color: #F3EFE3; }
 }
 
 @keyframes royalFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
@@ -92,88 +86,48 @@
   to { opacity: 1; }
 }
 
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 1.2s ease-out forwards;
-}
-
-.animate-royal-fade-up {
-  animation: royalFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-slide-in-left {
-  animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-slide-in-right {
-  animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 40s linear infinite;
-}
-
-.mask-marquee {
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 15%,
-    black 85%,
-    transparent
-  );
-}
-
 @keyframes royalGlowPulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.55;
-  }
-  50% {
-    transform: scale(1.08);
-    opacity: 0.95;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.55;
-  }
+  0%, 100% { transform: scale(1); opacity: 0.42; }
+  50% { transform: scale(1.08); opacity: 0.72; }
+}
+
+@keyframes royalSweep {
+  0%, 55% { transform: translateX(-130%); opacity: 0; }
+  62% { opacity: 0.55; }
+  78%, 100% { transform: translateX(130%); opacity: 0; }
 }
 
 @keyframes royalSpinSlow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
+@keyframes royalShimmer {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+
+.animate-fade-in { animation: fadeIn 1.2s ease-out forwards; }
+.animate-royal-fade-up { animation: royalFadeUp 900ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-royal-sweep { animation: royalSweep 8s ease-in-out infinite; }
+.animate-royal-shimmer { animation: royalShimmer 4s ease-in-out infinite; }
+
+@keyframes marquee {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee { animation: marquee 40s linear infinite; }
+
+.mask-marquee {
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

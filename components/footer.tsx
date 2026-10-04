@@ -91,7 +91,7 @@ export function Footer({ showContactForm = true }: { showContactForm?: boolean }
                 Pharos Reach
               </h3>
               <p className="text-[#8FA39B] text-base leading-relaxed font-light">
-                Expert strategy, unbundled. Strategic consultancy for global fashion and e-commerce leaders seeking transformation at scale.
+                Websites, systems, and digital infrastructure designed around how your business actually operates.
               </p>
 
               <div className="mt-6 space-y-2">

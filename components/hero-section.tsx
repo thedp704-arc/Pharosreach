@@ -10,7 +10,7 @@ export function HeroSection() {
           <div className="space-y-4 relative">
             <div className="absolute inset-0 bg-accent/5 blur-3xl rounded-full -z-10 scale-150" />
             <div className="inline-flex items-center gap-3 px-4 py-2 bg-[#C6A85A]/5 border border-[#C6A85A]/15 rounded-none mb-4 backdrop-blur-sm shadow-[0_0_15px_rgba(198,168,90,0.05)]">
-              <span className="text-[#C6A85A] text-[10px] uppercase tracking-[0.3em] font-bold">Expert Tools, Unbundled</span>
+              <span className="text-[#C6A85A] text-[10px] uppercase tracking-[0.3em] font-bold">Digital systems, built around your business</span>
             </div>
             <h1 className="font-serif text-foreground text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-tight max-w-5xl mx-auto drop-shadow-[0_0_25px_rgba(198,168,90,0.15)]">
               Websites that make people trust you in seconds.
@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="pt-8 flex flex-col items-center gap-3">
             <div className="h-[0.5px] w-12 bg-[#C6A85A]/40" />
             <p className="text-[#8FA39B]/60 text-xs uppercase tracking-[0.2em] font-medium">
-              Working with businesses across India, UAE, UK, and beyond
+              Built for ambitious businesses across markets
             </p>
           </div>
         </div>

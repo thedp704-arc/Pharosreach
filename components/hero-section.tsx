@@ -25,8 +25,8 @@ export function HeroSection() {
               <span className="relative z-10">Get Your Website</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </a>
-            <a href="/unsolicited-designs" className="border border-[#C6A85A]/30 text-foreground px-10 py-4 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#C6A85A]/10 transition-colors duration-500 w-full sm:w-auto text-center backdrop-blur-sm hover:shadow-[0_0_20px_rgba(198,168,90,0.1)]">
-              View Work
+            <a href="/services" className="border border-[#C6A85A]/30 text-foreground px-10 py-4 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#C6A85A]/10 transition-colors duration-500 w-full sm:w-auto text-center backdrop-blur-sm hover:shadow-[0_0_20px_rgba(198,168,90,0.1)]">
+              Explore Capabilities
             </a>
           </div>
 

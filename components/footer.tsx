@@ -97,7 +97,7 @@ export function Footer({ showContactForm = true }: { showContactForm?: boolean }
               <div className="mt-6 space-y-2">
                 <p className="text-[#8FA39B] text-sm font-light">
                   <span className="text-foreground block mb-1">dev@pharosreach.com</span>
-                  Global offices available
+                  Available for projects across time zones
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ export function Footer({ showContactForm = true }: { showContactForm?: boolean }
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-button-cta text-[#EDE8D0] px-6 py-3 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#E0C878] transition-colors duration-500 w-fit disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-button-cta text-[#0F1A17] px-6 py-3 rounded-none text-xs uppercase tracking-widest font-semibold hover:bg-[#E0C878] transition-colors duration-500 w-fit disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>

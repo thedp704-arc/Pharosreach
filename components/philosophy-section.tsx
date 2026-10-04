@@ -7,66 +7,44 @@ export function PhilosophySection() {
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="inline-flex items-center gap-4 mb-12">
           <div className="h-[1px] w-12 bg-[#C6A85A]/40" />
-          <h2 className="font-serif text-foreground text-4xl md:text-5xl font-medium tracking-tighter">
-            Our Philosophy
-          </h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-medium tracking-tighter">Our approach</h2>
         </div>
-        
+
         <div className="space-y-16">
           <div className="space-y-6">
             <p className="text-foreground text-xl md:text-2xl leading-relaxed font-light italic border-l-2 border-[#C6A85A]/30 pl-8">
-              "At Pharos Reach, we believe that exceptional strategy emerges from a deep understanding of market dynamics, consumer behavior, and organizational capability."
+              We believe good digital work should remove friction, not add another layer of it.
             </p>
             <p className="text-[#8FA39B] text-lg leading-relaxed font-light">
-              We are not consultants in the traditional sense—we are strategic architects who work hand-in-hand with visionary leaders to chart a course through complex, rapidly evolving global markets.
+              Pharos Reach helps ambitious businesses turn scattered digital tools into a clearer, more useful system. That can mean a better website, a cleaner lead journey, a connected CRM, or the infrastructure behind an e-commerce operation.
             </p>
           </div>
 
           <div className="space-y-8">
-            <h3 className="font-serif text-[#C6A85A] text-2xl md:text-3xl font-medium tracking-tight">
-              Born from Frustration, Built for Freedom
-            </h3>
+            <h3 className="font-serif text-[#C6A85A] text-2xl md:text-3xl font-medium tracking-tight">Precision over packages</h3>
             <p className="text-[#8FA39B] text-lg leading-relaxed font-light">
-              Our agency was founded on a simple realization: the digital landscape is over-complicated. When our founders attempted to scale their own ventures online, they were met with rigid tools and "all-or-nothing" service bundles. They were forced to pay premiums for bloated packages filled with features they didn’t need, while the specific solutions they did need remained out of reach.
+              You should not have to buy a giant bundle to solve one important problem. We scope around what your business actually needs, then build a system that can evolve without becoming a maze.
             </p>
-            <p className="text-foreground text-lg font-medium tracking-wide">
-              We decided to change that.
-            </p>
-          </div>
 
-          <div className="space-y-8">
-            <h3 className="font-serif text-[#C6A85A] text-2xl md:text-3xl font-medium tracking-tight">
-              The Pharos Edge: Precision over Bundles
-            </h3>
-            <p className="text-[#8FA39B] text-lg leading-relaxed font-light">
-              We believe you shouldn't have to buy the whole toolbox just to get a single wrench. Our philosophy is rooted in <span className="text-foreground font-normal">true customization</span>:
-            </p>
-            
             <div className="grid gap-8 mt-8">
               <div className="space-y-3">
-                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Tailored Freedom</h4>
-                <p className="text-[#8FA39B] text-base leading-relaxed font-light">
-                  We give you the power to choose exactly what your business requires. No forced bundles, no hidden premiums for unused services.
-                </p>
+                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Business-first</h4>
+                <p className="text-[#8FA39B] text-base leading-relaxed font-light">The work starts with the customer journey and the operational problem, not the tool.</p>
               </div>
               <div className="space-y-3">
-                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Strategic Agility</h4>
-                <p className="text-[#8FA39B] text-base leading-relaxed font-light">
-                  Our approach combines financial acuity with creative vision to identify untapped opportunities and build sustainable competitive advantages across borders.
-                </p>
+                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Useful by design</h4>
+                <p className="text-[#8FA39B] text-base leading-relaxed font-light">Every page, integration, and automation should have a job and a measurable reason to exist.</p>
               </div>
               <div className="space-y-3">
-                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Global Reach, Local Focus</h4>
-                <p className="text-[#8FA39B] text-base leading-relaxed font-light">
-                  We are the bridge for small and medium-sized businesses looking to break into international markets without the overhead of a massive corporation.
-                </p>
+                <h4 className="text-foreground text-sm uppercase tracking-widest font-semibold">Built to evolve</h4>
+                <p className="text-[#8FA39B] text-base leading-relaxed font-light">We leave room for the next stage instead of locking you into a brittle setup from day one.</p>
               </div>
             </div>
           </div>
 
           <div className="pt-8 border-t border-[#C6A85A]/10">
             <p className="text-foreground text-xl leading-relaxed font-light">
-              Whether you are a growing brand or an established player looking for international expansion, we provide the solution you’ve been looking for: <span className="text-accent font-medium italic">expert strategy, unbundled.</span>
+              Better digital systems are quieter. Customers move through them without noticing the machinery.
             </p>
           </div>
         </div>

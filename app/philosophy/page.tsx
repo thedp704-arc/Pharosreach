@@ -1,8 +1,12 @@
-import React from 'react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { PhilosophySection } from '@/components/philosophy-section'
 import { RoyalDivider } from '@/components/royal-divider'
+
+export const metadata = {
+  title: 'Approach',
+  description: 'Pharos Reach builds practical digital systems around the business problem, customer journey, and next stage of growth.',
+}
 
 export default function PhilosophyPage() {
   return (
